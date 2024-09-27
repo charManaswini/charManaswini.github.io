@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manaswini Poluri Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Main Black Background Section -->
+    <section id="main-page" class="black-background">
+        <div class="sharp-shape"></div>
+        <div class="content">
+            <div class="profile-img">
+                <img src="ManaswiniSharma.jpeg" alt="Profile Picture">
+            </div>
+            <div class="name-text">
+                <h1 class="name">Manaswini Poluri</h1>
+                <p class="typed-text"></p> <!-- Typing effect text -->
+            </div>
+        </div>
+
+        <!-- Symbol to slide up the white page -->
+        <div class="slide-symbol" onclick="showDetails()">|||</div>
+    </section>
+
+    <!-- Sliding White Page -->
+    <section id="white-page" class="white-slide hidden">
+        <div class="white-content">
+            <!-- Undo Button to hide the slider -->
+            <button class="undo-button" onclick="hideDetails()">Undo</button>
+
+            <!-- Tabs for Projects and Achievements -->
+            <div class="tabs">
+                <button class="tab-button" onclick="showProjects()">Projects</button>
+                <button class="tab-button" onclick="showAchievements()">Achievements</button>
+            </div>
+
+            <!-- Projects Section -->
+            <div id="projects" class="project-list hidden">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3><a href="https://github.com/charManaswini/Error-Message-Enhancement-Tool" target="_blank">Error Message Enhancement Tool</a></h3>
+                    <p>Improving clarity and accuracy of error messages in e-commerce apps.</p>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/charManaswini/Distributed-Payment-Processing-System" target="_blank">Distributed Payment Processing System</a></h3>
+                    <p>A scalable system to handle distributed payments.</p>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/charManaswini/Aculearn" target="_blank">Aculearn</a></h3>
+                    <p>A learning management system designed for collaborative education.</p>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/charManaswini/ClubManagementAmrita" target="_blank">Club Management System</a></h3>
+                    <p>Managing university clubs, events, and memberships.</p>
+                </div>
+            </div>
+
+            <!-- Achievements Section -->
+            <div id="achievements" class="achievements-list hidden">
+                <h2>Achievements</h2>
+                <a href="https://nebigdatahub.org/nsdc/" target="_blank">NSDC Club Founder</a> <br>
+                <a href="https://drive.google.com/file/d/1e1QEupIwwRSXiDTuPmhBZhiXzS11XuJE/view" target="_blank">Deloitte Internship Certificate</a> <br>
+                <a href="https://drive.google.com/file/d/1JTlsYb-8Zf98L76CIE7FSi623XUvksiA/view" target="_blank">GDSC Technical Team Member</a>
+            </div>
+
+            <!-- Contact Section -->
+            <h2>Contact Me</h2>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

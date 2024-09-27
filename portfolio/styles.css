@@ -1,0 +1,173 @@
+/* General Body Style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Chakra Petch', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Main Black Background Section */
+.black-background {
+    height: 100vh;
+    background-color: #000;
+    color: #d3d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-image: url('background-effect.png');
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.sharp-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(105,105,105,0.1), rgba(0,0,0,1));
+    clip-path: polygon(0 0, 60% 0, 70% 100%, 0% 100%);
+}
+
+.content {
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    transition: opacity 1.2s ease;
+}
+
+.hidden-content {
+    opacity: 0; /* Hides the name and picture when the slider goes up */
+}
+
+.profile-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.name {
+    font-size: 5em;
+    color: #d3d3d3;
+}
+
+.typed-text {
+    font-size: 2em;
+    color: #aa6f73;
+}
+
+/* Slide Symbol Style */
+.slide-symbol {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2em;
+    color: #d3d3d3;
+    cursor: pointer;
+}
+
+/* Sliding White Page */
+.white-slide {
+    background-color: #fff;
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    transition: all 1.2s ease;
+    color: #333;
+}
+
+.white-content {
+    padding: 50px;
+    text-align: right;
+}
+
+/* Projects and Achievements Fade-In Transition */
+.project-list, .achievements-list {
+    display: none;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.project a, .achievements-list a {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.project a:hover, .achievements-list a:hover {
+    color: #aa6f73;
+}
+
+/* Tabs Section for Projects and Achievements Buttons */
+.tabs {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tab-button {
+    font-family: 'Chakra Petch', sans-serif;
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 0 10px;
+    font-size: 3em;
+    font-weight: bold;
+    background-color: #aa6f73;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #66545e;
+    transform: translateY(-3px);  /* Slight lift effect on hover */
+}
+
+.tab-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px #aa6f73;
+}
+
+/* Undo Button */
+.undo-button {
+    background-color: #aa6f73;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    float: right;
+}
+
+.undo-button:hover {
+    background-color: #66545e;
+}
+
+/* Social Icons */
+.social-icons a {
+    margin: 0 10px;
+    font-size: 1.3em;
+    color: #333;
+}
+
+.social-icons a:hover {
+    color: #aa6f73;
+}
